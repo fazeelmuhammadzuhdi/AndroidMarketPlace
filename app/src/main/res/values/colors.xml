@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">@color/hijau1</color>
+    <color name="colorPrimaryVariant">@color/hijau2</color>
+    <color name="colorOnPrimary">@color/white</color>
+
+
+    <color name="hijau1">#02EE0A</color>
+    <color name="hijau2">#05C60B</color>
+    <color name="hijau3">#007E00</color>
+    <color name="hijau4">#006000</color>
+
 </resources>

@@ -1,12 +1,9 @@
 package com.example.marketplace.ui.login
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import com.example.marketplace.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.marketplace.databinding.ActivityLoginBinding
-import com.example.marketplace.databinding.FragmentDashboardBinding
 import com.example.marketplace.util.Prefs
 
 class LoginActivity : AppCompatActivity() {

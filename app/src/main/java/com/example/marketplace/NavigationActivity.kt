@@ -3,15 +3,14 @@ package com.example.marketplace
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.marketplace.databinding.ActivityNavigationBinding
 import com.example.marketplace.ui.login.LoginActivity
 import com.example.marketplace.util.Prefs
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class NavigationActivity : AppCompatActivity() {
 
@@ -33,7 +32,7 @@ class NavigationActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_keranjang
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+//      setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         navView.setOnItemSelectedListener {
 
