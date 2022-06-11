@@ -15,10 +15,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_15sdp"
@@ -33,10 +33,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true"
-            >
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -49,13 +49,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:layout_marginVertical="@dimen/_15sdp"
             android:text="Lupa Kata Sandi?"
-            android:layout_gravity="end"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_masuk"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
             android:backgroundTint="@color/hijau2"
@@ -98,9 +99,9 @@
             android:layout_height="@dimen/_45sdp"
             android:backgroundTint="@color/white"
             android:text="Google"
-            android:textSize="@dimen/_15sdp"
             android:textAllCaps="false"
             android:textColor="#939393"
+            android:textSize="@dimen/_15sdp"
             app:icon="@drawable/ic_google"
             app:iconSize="@dimen/_19sdp"
             app:iconTint="@null" />
@@ -130,43 +131,12 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <LinearLayout
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ProgressBar
+        android:id="@+id/pd"
+        android:visibility="gone"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/tv_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="STATUS"
-            android:textSize="@dimen/_20sdp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="10sp"
-            android:text="LOGIN"
-            android:textSize="@dimen/_20sdp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/btn_logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="10sp"
-            android:text="LOGOUT"
-            android:textSize="@dimen/_20sdp"
-            android:textStyle="bold" />
-    </LinearLayout>
 
 </RelativeLayout>
